@@ -69,6 +69,9 @@ class Stepper {
   }
 
   // Public
+  currentStep() {
+    return this._currentIndex;
+  }
 
   next () {
     const nextStep = (this._currentIndex + 1) <= this._steps.length - 1 ? this._currentIndex + 1 : (this._steps.length - 1)

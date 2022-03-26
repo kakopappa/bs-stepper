@@ -5,7 +5,7 @@ declare type StepperOptions = {
     steps?: string,
     trigger?: string,
     stepper?: string
-  }
+  },
 };
 
 declare class Stepper {
@@ -15,6 +15,7 @@ declare class Stepper {
   to(stepNumber: number): void;
   reset(): void;
   destroy(): void;
+  currentStep(): number;
 }
 
 export default Stepper;
